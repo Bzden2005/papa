@@ -1,44 +1,68 @@
-<p>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body>
-        <header>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDGCIEOumihb9emBs8FX9oEL5FNaulcV94ww&s" alt="">
-            <h1 id="Bob"></h1>
-                <p>Студент</p>
-        </header>
-        <main>
-        <section>
-    <h2>Контактна інформація</h2>
-        </section>
-        <section>
-    <ul>
-        +380687653424
-    </ul>
-        </section>
-        <section>
-            <ul>
-                clitofg2345@gmail.com
-            </ul>
-        </section>
-        <section>
-            <h2>
-                <p>
-                    Запоріжський Електротехнічний фаховий колледж
-                </p>
-            </h2>
-        </section>
-        </main>
-        <footer>
-            
-        </footer>
-   <script src="/script.js"></script>
-   
-    </body>
-    </html>
-</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Basic styles for clarity/default look */
+        body {
+            background-color: white; /* Initial background */
+            color: black; /* Initial text color */
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+        }
+        /* Style for the button to make it "without style" */
+        #darkModeToggle {
+            background: none;
+            color: inherit; /* Inherit text color */
+            border: 1px solid currentColor; /* Simple border in the current text color */
+            padding: 5px 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        /* Dark mode styles (applied by JS) */
+        .dark-mode {
+            background-color: #121212; /* Dark background */
+            color: #e0e0e0; /* Light text color */
+        }
+        .dark-mode #darkModeToggle {
+             border: 1px solid #e0e0e0; /* Border for the button in dark mode */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDGCIEOumihb9emBs8FX9oEL5FNaulcV94ww&s" alt="">
+        <h1 id="Bob"></h1>
+        <p>Студент</p>
+        <button id="darkModeToggle">Змінити на темну тему</button>
+    </header>
+    <main>
+    <section>
+        <h2>Контактна інформація</h2>
+    </section>
+    <section>
+        <ul>
+            <li>+380687653424</li>
+        </ul>
+    </section>
+    <section>
+        <ul>
+            <li>clitofg2345@gmail.com</li>
+        </ul>
+    </section>
+    <section>
+        <h2>
+            <p>
+                Запоріжський Електротехнічний фаховий колледж
+            </p>
+        </h2>
+    </section>
+    </main>
+    <footer>
+        
+    </footer>
+    <script src="/script.js"></script>
+</body>
+</html>
